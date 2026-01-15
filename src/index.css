@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+
+  body {
+    @apply bg-primary text-gray-100 font-sans;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-3.5 bg-gradient-accent text-white rounded-xl font-semibold hover:shadow-glow transition-all duration-300 hover:scale-105 active:scale-95 border border-accentLight/20;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3.5 border-2 border-accent text-accent rounded-xl font-semibold hover:bg-accent/10 transition-all duration-300 hover:shadow-glow;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-accent via-accentLight to-purple-500 bg-clip-text text-transparent mb-12 leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-400 max-w-2xl;
+  }
+
+  .card {
+    @apply relative bg-gradient-card backdrop-blur-xs rounded-2xl p-8 border border-accent/10 hover:border-accent/30 transition-all duration-300 shadow-card hover:shadow-card-hover;
+    background-image: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.02) 100%);
+  }
+
+  .card::before {
+    @apply absolute inset-0 rounded-2xl bg-gradient-to-r from-accent/0 via-accent/5 to-transparent opacity-0 pointer-events-none;
+    content: '';
+    transition: opacity 0.3s;
+  }
+
+  .card:hover::before {
+    @apply opacity-100;
+  }
+
+  .card-content {
+    @apply relative z-10;
+  }
+
+  .skill-badge {
+    @apply px-4 py-2.5 bg-tertiary rounded-lg text-sm font-medium text-accentLight border border-accent/20 hover:border-accent/50 transition-all duration-300 hover:bg-accent/5 cursor-default;
+  }
+
+  .timeline-dot {
+    @apply w-4 h-4 bg-accent rounded-full border-2 border-secondary shadow-glow;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent via-accentLight to-purple-500 bg-clip-text text-transparent;
+  }
+
+  .section {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* Animation Utilities */
+@layer utilities {
+  .animate-stagger-1 {
+    animation-delay: 0.1s;
+  }
+
+  .animate-stagger-2 {
+    animation-delay: 0.2s;
+  }
+
+  .animate-stagger-3 {
+    animation-delay: 0.3s;
+  }
+
+  .animate-stagger-4 {
+    animation-delay: 0.4s;
+  }
+
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+
+  .gradient-border {
+    @apply relative;
+  }
+
+  .gradient-border::before {
+    @apply absolute inset-0 rounded-2xl bg-gradient-accent p-px pointer-events-none;
+    content: '';
+  }
+}
