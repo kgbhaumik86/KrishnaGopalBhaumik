@@ -32,20 +32,15 @@ export const About = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed text-lg">
-              With 15+ years of experience in the technology industry, I've successfully led digital transformation
-              initiatives across multiple organizations. My expertise spans SharePoint Online, Power Platform,
-              Microsoft 365, and modern web development.
+              Hello, I'm Krishna Gopal Bhaumik — a Technical Manager and Certified Scrum Product Owner (CSPO) with 15+ years of experience delivering enterprise-scale solutions on SharePoint Online, Microsoft 365, and Power Platform. Based in Bengaluru, I help organizations turn digital strategy into measurable business outcomes.
             </p>
 
             <p className="text-gray-300 leading-relaxed text-lg">
-              As a Certified Scrum Product Owner (CSPO), I excel at bridging the gap between technical teams and
-              business stakeholders, ensuring that technology solutions directly contribute to business objectives.
+              I combine hands-on technical depth (SPFx with React, Power Apps, Power Automate, PowerShell, Azure DevOps) with strong delivery and people leadership. From defining solution roadmaps to leading cross-functional teams, I focus on building scalable, well-governed platforms that drive adoption, efficiency, and long-term value.
             </p>
 
             <p className="text-gray-300 leading-relaxed text-lg">
-              I'm passionate about automating workflows, improving user experiences, and building scalable solutions
-              that drive business value. Throughout my career, I've consistently delivered results with a 95% client
-              satisfaction rate.
+              As a manager and product owner, I bridge business vision and Agile execution—prioritizing backlogs, guiding teams, mentoring engineers, and partnering closely with stakeholders to deliver outcome-driven solutions. I thrive at the intersection of technology, leadership, and strategy, enabling teams and organizations to perform at their best.
             </p>
           </div>
 

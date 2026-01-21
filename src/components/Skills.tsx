@@ -3,28 +3,65 @@ import { Code2, Zap, Cloud, Briefcase } from 'lucide-react';
 export const Skills = () => {
   const skillCategories = [
     {
-      icon: Code2,
-      category: 'SharePoint & Power Platform',
-      skills: ['SharePoint Online', 'Office 365', 'Power Automate', 'Power Apps', 'SPFx', 'PowerShell', 'Sharegate'],
-    },
-    {
-      icon: Zap,
-      category: 'Web Development',
-      skills: ['React JS', 'TypeScript', 'HTML', 'JavaScript', 'Bootstrap', 'Tailwind CSS'],
+      icon: Briefcase,
+      title: 'Leadership & Management',
+      skills: [
+        'Technical Leadership',
+        'Agile / Scrum (CSPO)',
+        'Product Ownership',
+        'Roadmapping',
+        'Sprint Planning',
+        'Backlog Prioritization',
+        'Stakeholder Management',
+        'Team Mentoring',
+      ],
     },
     {
       icon: Cloud,
-      category: 'Microsoft Technologies',
-      skills: ['Azure', 'Azure DevOps', '.NET', 'CSOM', 'JSOM', 'Visual Studio'],
+      title: 'Microsoft 365 & Power Platform',
+      skills: [
+        'SharePoint Online',
+        'Office 365',
+        'Power Platform',
+        'Power Apps',
+        'Power Automate',
+        'Governance & Adoption',
+        'Automation',
+      ],
     },
     {
-      icon: Briefcase,
-      category: 'Project Management',
-      skills: ['Agile', 'Scrum (CSPO)', 'Sprint Planning', 'Backlog Prioritization', 'Stakeholder Management'],
+      icon: Code2,
+      title: 'Development & Customization',
+      skills: [
+        'SPFx',
+        'React JS',
+        'TypeScript',
+        'JavaScript',
+        'HTML',
+        'Bootstrap',
+        'PowerShell Scripting',
+        'CSOM / JSOM',
+        '.NET',
+        'REST APIs',
+      ],
+    },
+    {
+      icon: Zap,
+      title: 'DevOps, Cloud & Tools',
+      skills: [
+        'Azure',
+        'Azure DevOps',
+        'Git / GitHub',
+        'CI/CD',
+        'Visual Studio',
+        'Sharegate',
+        'SharePoint Migration',
+        'SP2010 → M365',
+      ],
     },
   ];
 
-  const softSkills = [
+  const professionalStrengths = [
     'Project Management',
     'Decision Making',
     'Collaboration',
@@ -46,7 +83,7 @@ export const Skills = () => {
             const Icon = category.icon;
             return (
               <div
-                key={category.category}
+                key={category.title}
                 className="card hover:border-accent/50 animate-fade-in-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
@@ -54,7 +91,7 @@ export const Skills = () => {
                   <div className="mb-4 p-3 bg-accent/10 rounded-lg w-fit">
                     <Icon className="text-accent" size={24} />
                   </div>
-                  <h3 className="text-sm font-bold text-gray-100 mb-4">{category.category}</h3>
+                  <h3 className="text-sm font-bold text-gray-100 mb-4">{category.title}</h3>
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill) => (
                       <span key={skill} className="skill-badge">
@@ -68,14 +105,14 @@ export const Skills = () => {
           })}
         </div>
 
-        {/* Soft Skills */}
+        {/* Professional Strengths */}
         <div className="card hover:border-accent/50">
           <div className="card-content">
-            <h3 className="text-2xl font-bold gradient-text mb-6">Soft Skills & Competencies</h3>
+            <h3 className="text-2xl font-bold gradient-text mb-6">Professional Strengths</h3>
             <div className="flex flex-wrap gap-3">
-              {softSkills.map((skill) => (
-                <span key={skill} className="skill-badge">
-                  {skill}
+              {professionalStrengths.map((strength) => (
+                <span key={strength} className="skill-badge">
+                  {strength}
                 </span>
               ))}
             </div>

@@ -24,10 +24,11 @@ export const Hero = () => {
             15+ years | CSPO Certified | Agile Leadership | Digital Transformation
           </p>
 
-          <p className="text-gray-400 max-w-3xl mb-10 leading-relaxed text-lg">
-            Results-driven Technical Manager specializing in SharePoint Online, Power Platform, and Microsoft 365.
-            Expert in SPFx (React, TypeScript), Power Automate, and Power Apps with proven track record of improving
-            efficiency by 25%, boosting adoption by 30%, and achieving 95% client satisfaction.
+          <p className="text-gray-300 max-w-3xl mb-10 leading-relaxed text-lg">
+            Results-driven Technical Manager with deep expertise in SharePoint Online, Power Platform, and Microsoft 365,
+            combining hands-on architecture with strong people and delivery leadership. Proven ability to lead cross-functional
+            teams, drive solution design using SPFx (React, TypeScript), Power Automate, and Power Apps, and align technology
+            with business goals.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center md:justify-start">
@@ -45,14 +46,14 @@ export const Hero = () => {
           </div>
 
           {/* Contact Info Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12 max-w-md">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 w-full max-w-2xl">
             <a
               href="tel:+919836952545"
               className="card hover:border-accent/50 group"
             >
               <div className="card-content flex items-center gap-3">
-                <Phone size={20} className="text-accent group-hover:scale-110 transition-transform" />
-                <div className="text-left">
+                <Phone size={20} className="text-accent group-hover:scale-110 transition-transform flex-shrink-0" />
+                <div className="text-left min-w-0">
                   <p className="text-xs text-gray-500">Phone</p>
                   <p className="font-medium text-gray-200">+91 9836952545</p>
                 </div>
@@ -63,10 +64,10 @@ export const Hero = () => {
               className="card hover:border-accent/50 group"
             >
               <div className="card-content flex items-center gap-3">
-                <Mail size={20} className="text-accent group-hover:scale-110 transition-transform" />
-                <div className="text-left">
+                <Mail size={20} className="text-accent group-hover:scale-110 transition-transform flex-shrink-0" />
+                <div className="text-left min-w-0">
                   <p className="text-xs text-gray-500">Email</p>
-                  <p className="font-medium text-gray-200 truncate">bhaumikg1986@...</p>
+                  <p className="font-medium text-gray-200 break-all">bhaumikg1986@gmail.com</p>
                 </div>
               </div>
             </a>
